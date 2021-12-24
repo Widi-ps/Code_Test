@@ -51,10 +51,7 @@ const schoolId = '2';
 
 function result(students) {
   // Your Code Here
-    if(students.name == "Jaka"){
-      console.log("haha")
-    }
-  
+    
 }
 
 console.log(result(students, schoolId));
