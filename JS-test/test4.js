@@ -49,9 +49,23 @@ const students = [
 ]
 const schoolId = '2';
 
-function result(students) {
+function result(students, schoolId) {
   // Your Code Here
-    
+  const res = []
+  const filtered = students.filter(items => {
+    return items.school.id == schoolId
+    })
+  const obj = filtered.forEach(item => {
+    res.push({
+      name : item.name,
+      school_name : item.school.short_name,
+    })
+  });
+
+  return res
 }
 
-console.log(result(students, schoolId));
+
+console.log(result(students, schoolId))
+
+// console.log(students);
